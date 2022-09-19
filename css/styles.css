@@ -1,0 +1,120 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+  }
+  
+  :root {
+    --primary-text-color: rgba(0, 0, 0, 0.8);
+    --title-text-color: #000000;
+    --sec-text-color:#757575;
+    --accent-color: #18a0fb;
+    --primary-white-color: #ffffff;
+    --main-btn-color: #ffffff;
+    --second-btn-color: #303030;
+    
+  }
+
+  .visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+  .logo {
+    color: var(--title-text-color);
+  }
+  
+  .logo:hover {
+    color: var(--accent-color);
+  }
+
+  .list {
+    list-style: none;
+  }
+
+  /* links */
+  .hero{
+    font-weight: 500;
+    font-size: 14px;
+
+  }
+  .hero-link {
+   
+    line-height: 1.2    
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--title-text-color)
+  }
+  .link{text-decoration: none;}
+  .hero-link:hover,
+  .hero-link:focus {
+    color: var(--accent-color)
+  }
+  
+  /* button filter */
+  .button-list {
+    font-family: inherit;
+    font-weight: 600;
+  }
+  .header-btn {
+    
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    cursor: pointer;
+    color: var(--primary-text-color)    
+    
+  }
+  .header-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--main-btn-color);
+  }
+.portfolio{
+font-family: 'Roboto';
+font-style: normal;
+
+}
+.portfolio-title{
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--title-text-color);
+}
+
+.portfolio-text{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.9;
+/* identical to box height, or 188% */
+
+letter-spacing: 0.03em;
+
+color: var(--sec-text-color)
+}
+.adress {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.footer-adress-text {
+color: var(--primary-white-color);
+letter-spacing: 0.03em;
+}
+.footer-email {
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+}
+.footer-background {
+  background-color: var(--second-btn-color);
+}
