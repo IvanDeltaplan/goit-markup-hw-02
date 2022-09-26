@@ -2,7 +2,7 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
-  lang
+  
 }
 
 :root {
@@ -13,7 +13,84 @@ body {
   --primary-white-color: #ffffff;
   --main-btn-color: #ffffff;
   --second-btn-color: #303030;
+  --card-set-gap: 30px;
+  --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+   max-width: 100%; 
+  height: auto; 
+  /* width: fit-content; */
+  
+  
+}
+.container {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+   /* outline: 2px solid red;  */
+   margin-left: auto;
+   margin-right: auto;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  
+  /* padding-left: 215px;
+  padding-top: 24px;
+  padding-bottom: 25px; */
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  margin-left: 93px;
+  height: 80px;
+}
+
+.header-list {
+  display: flex;
+  gap: 30px;
+}
+
+.header-connect {
+  display: flex;
+   /* margin-left: 355px;  */
+   justify-content: flex-end;
+  
+}
+
+.button-position{
+  display: flex;
+  justify-content: center;
+  margin-top: 94px; 
+  
+}
+
 a {
   text-decoration: none;
 }
@@ -30,7 +107,7 @@ a {
   margin: -1px;
 }
 .logo {
-  font-family: "Raleway, san-serif";
+  font-family: "Raleway", sans-serif;
 
   font-style: normal;
   font-weight: 700;
@@ -56,9 +133,7 @@ a {
     color: var(--accent-color);
   } */
 
-.list {
-  list-style: none;
-}
+
 li {
   list-style: none;
 }
@@ -74,10 +149,33 @@ li {
 
   color: var(--primary-white-color);
 }
+
+
+
 .slogan-bgcolor {
   background-color: #2f303a;
+  /* width: 1600px;*/
+  height: 600px; 
+  display: flex;
+  text-align: center;
+   align-items: center; 
+  justify-content: center;
+  
+  
 }
+.container-slogan {
+  
+  width: 696px ;
+  height: 120px;
+  display: block;
+  
+  
+}
+ 
+.perevaga-container {
+margin-top: 94px;
 
+}
 .perevaga-title {
   font-weight: 700;
   font-size: 14px;
@@ -98,17 +196,27 @@ li {
 
   color: #757575;
 }
+.skills-container {
+margin-top: 94px;
 
+}
 .about-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-
+margin-top: 50px;
+margin-bottom: 50px;
   color: #212121;
 }
+.team-container {
 
+  padding-bottom: 50px;
+}
+.team{
+  background-color: #F5F4FA;
+}
 .hero-name {
   font-weight: 500;
   font-size: 16px;
@@ -117,7 +225,8 @@ li {
 
   text-align: center;
   letter-spacing: 0.03em;
-
+padding-top: 30px;
+padding-bottom: 10px;
   color: #212121;
 }
 
@@ -129,8 +238,12 @@ li {
 
   text-align: center;
   letter-spacing: 0.03em;
+  padding-bottom: 30px;
 
   color: #757575;
+}
+.link {
+  text-decoration: none;
 }
 .site-nav .hero-link {
   color: var(--title-text-color);
@@ -181,15 +294,14 @@ li {
   font-size: 16px;
   line-height: 30px;
   /* identical to box height, or 188% */
-
-  display: flex;
-  align-items: center;
-  text-align: center;
+  margin-top: 30px;
   letter-spacing: 0.06em;
 
   color: var(--primary-white-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  height: 50px;
+  font-weight: 216px;
 }
 .slogan-button:hover {
   background-color: #188ce8;
@@ -208,6 +320,58 @@ li {
 
   color: var(--sec-text-color);
 }
+.card-container{
+  width: 1170px;
+  height: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+   /* outline: 2px solid red;   */
+   margin-left: auto;
+   margin-right: auto;
+
+}
+.card-set {
+  padding: 0;
+  margin: 0;
+  
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap)); 
+  margin-top: 34px;
+  margin-bottom: 94px;
+}
+
+.card-set > .item {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+  margin-bottom: var(--card-set-gap);
+}
+
+/* CARD */
+.card {
+  box-shadow: var(--card-shadow);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.card-team {
+  box-shadow: var(--card-shadow);
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-text {
+  margin-top: 10px;
+}
+
+
 
 .portfolio {
   font-family: "Roboto";
@@ -232,9 +396,11 @@ li {
   color: var(--sec-text-color);
 }
 .adress {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
+
 }
 .footer-adress-text {
   color: var(--primary-white-color);
@@ -246,4 +412,5 @@ li {
 }
 .footer-background {
   background-color: var(--second-btn-color);
+  
 }

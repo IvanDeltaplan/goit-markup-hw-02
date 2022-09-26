@@ -14,40 +14,53 @@
     <link rel="stylesheet" href="./css/styles.css" />
     
   </head>
-  <header class="hero">
-    <a href="" class="logo"> <span class="web-blue">Web</span><span class="web-black">Studio</span></a>
+  <header>
+    <div class="container header-container"> 
+   <a href="" class="logo">
+     <span class="web-blue">Web</span
+     ><span class="web-black">Studio</span></a>
+   
     
-    <nav>
-      <ul class="site-nav">
-        <li><a href="./index.html" class="link-current hero-link" >студія</a></li>
-        <li><a href="./portfolio.html" class= " hero-link">портфоліо</a></li>
-        <li><a href="" class="hero-link">контакти</a></li>
-      </ul>
 
-
-    </nav>
-    <ul class="header-adress">
-      <li>
-        <a href="mailto:info@devstudio.com" class="header-mail"
-          >info@devstudio.com</a
-        >
-      </li>
-      <li>
-        <a href="tel:+380961111111" class="header-mail">+38 096 111 11 11</a>
-      </li>
-    </ul>
-    </header>
+ <nav class="header-nav">
+   
+     
+     <ul class="site-nav header-list">
+       <li><a href="./index.html" class="hero-link link-current">студія</a></li>
+       <li><a href="./portfolio.html" class="hero-link"
+           >портфоліо</a>
+       </li>
+       <li><a href="" class="hero-link">контакти</a></li>
+     </ul>
+   
+   </nav>
+   
+ <div class="container header-connect">
+   <ul class="header-adress header-list">
+     <li>
+       <a href="mailto:info@devstudio.com" class="header-mail"
+         >info@devstudio.com</a
+       >
+     </li>
+     <li>
+       <a href="tel:+380961111111" class="header-mail">+38 096 111 11 11</a>
+     </li>
+   </ul>
+ </div>
+</div>
+ </header>
     <main>
     
       <section class="slogan-bgcolor">
+        <div class="container-slogan">
         <h1 class="slogan">Ефективні рішення для вашого бізнесу</h1>
-
-        <button type="button"  class="slogan-button">Замовити послугу</button>
+                <button type="button" class="slogan-button">Замовити послугу</button> 
+                </div>
       </section>
       
-      <section >
+      <section class="container perevaga-container">
         <h2 class="visually-hidden">ПЕРВАГА</h2>
-        <ul>
+        <ul class=header-list>
           <li>
             <h3 class="perevaga-title">УВАГА ДО ДЕТАЛЕЙ</h3>
             <p class="perevaga-text">
@@ -77,9 +90,12 @@
           </li>
         </ul>
       </section>
-      <section>
+      
+      <section class="container skills-container">
+
         <h3 class="about-title">Чим ми займаємося</h3>
-        <ul>
+
+        <ul class="header-list">
           <li>
             <img src="images/img.png" alt=" 1" width="370" height="294" />
           </li>
@@ -91,11 +107,14 @@
           </li>
         </ul>
       </section>
-      <section>
+      
+      <section class="team">
+      <div class="container team-container">
         <h2 class="about-title"> Наша команда</h2>
-        <ul>
-          <li>
-            <div>
+        <ul class="header-list">
+          <li class="item">
+            <article class="card-team">
+            
               <img
                 src="images/img_team1.jpg"
                 alt="игор"
@@ -106,10 +125,13 @@
               <h3 class="hero-name">Ігор Дем'яненко</h3>
 
               <p lang="en" class="hero-about">Product Designer</p>
-            </div>
+            
+          </article>
           </li>
+
+
           <li>
-            <div>
+            <article class="card-team">
               <img
                 src="images/img_team2.jpg"
                 alt="ольга"
@@ -120,10 +142,10 @@
               <h3 class="hero-name">Ольга Рєпіна</h3>
 
               <p class="hero-about">Frontend Developer</p>
-            </div>
+            </article>
           </li>
           <li>
-            <div>
+            <article class="card-team">
               <img
                 src="images/img_team3.jpg"
                 alt="микола"
@@ -134,10 +156,10 @@
               <h3 class="hero-name">Микола Тарасов</h3>
 
               <p class="hero-about">Marketing</p>
-            </div>
+            </article>
           </li>
           <li>
-            <div>
+            <article class="card-team">
               <img
                 src="images/img_team4.jpg"
                 alt="михайло"
@@ -148,16 +170,21 @@
               <h3 class="hero-name">Михайло Єрмаков</h3>
 
               <p class="hero-about">UI Designer</p>
-            </div>
+            </article>
           </li>
         </ul>
+      </div>
       </section>
     </main>
+    
     <footer class="footer-background">
+      <div class="container">
       <a href="" class="logo"><span class="web-blue">Web</span>
         <span class="web-white">Studio</span></a>
-      <address class="adress">
-        <ul class="list">
+      
+        <address >
+        <ul class="adress">
+          
           <li>
             <a
               href="https://goo.gl/maps/e7AEsHHhA3SEjv6j6"
@@ -180,6 +207,7 @@
           </li>
         </ul>
       </address>
+    </div>
     </footer>
   </body>
 </html>
